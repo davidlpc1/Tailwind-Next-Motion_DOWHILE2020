@@ -4,12 +4,18 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'ui-sans-serif']
-      }
+        sans: ['Poppins', 'ui-sans-serif']
+      },
+    },
+    cursor:{
+      grab:'grab',
+      grabbing:'grabbing'
     }
   },
   variants: {
-    extend: {}
+    extend: {
+      cursor:['focus','hover','active'],
+    }
   },
   plugins: []
 }
