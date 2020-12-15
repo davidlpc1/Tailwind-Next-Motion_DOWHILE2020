@@ -4,10 +4,13 @@ import Link from 'next/Link'
 interface TechnologyProps {
     imgSrc: string
     layoutId: string
+    name: string
 }
 
-const Technology: React.FC<TechnologyProps> = ({ imgSrc, layoutId}) => {
+const Technology: React.FC<TechnologyProps> = ({ imgSrc, layoutId,name}) => {
   return (
+    <>
+    <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-6xl text-center">{name}</h1>
     <div className="flex flex-col items-center">
       <motion.img
         src={imgSrc}
@@ -27,6 +30,7 @@ const Technology: React.FC<TechnologyProps> = ({ imgSrc, layoutId}) => {
         </Link>
       </motion.div>
     </div>
+    </>
   )
 }
 
