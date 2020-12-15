@@ -10,7 +10,7 @@ interface TechnologyProps {
 const Technology: React.FC<TechnologyProps> = ({ imgSrc, layoutId,name}) => {
   return (
     <>
-    <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-6xl text-center">{name}</h1>
+    <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-6xl text-center m-2">{name}</h1>
     <div className="flex flex-col items-center">
       <motion.img
         src={imgSrc}
